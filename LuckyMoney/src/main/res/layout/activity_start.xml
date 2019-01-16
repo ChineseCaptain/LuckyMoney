@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/background"
     android:orientation="vertical">
 
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:titleTextColor="@color/white"
         android:title="@string/app_name"
+        app:titleTextColor="@color/white"
         android:background="@color/colorPrimary" />
 
     <ScrollView

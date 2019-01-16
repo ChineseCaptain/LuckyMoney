@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.uu.helper.Config;
 import com.uu.helper.job.AccessbilityJob;
-import com.uu.helper.job.WechatAccessbilityJob;
+import com.uu.helper.wechat.WechatJob;
 import com.uu.helper.util.EventBusMsg;
 
 import java.util.ArrayList;
@@ -34,7 +34,7 @@ public class LuckyMoneyService extends AccessibilityService {
     public void onCreate() {
         super.onCreate();
         Log.d(TAG, "LuckyMoneyService, onCreate");
-        WechatAccessbilityJob wechatJob = new WechatAccessbilityJob();
+        WechatJob wechatJob = new WechatJob();
         wechatJob.onCreateJob(this);
         mJobs.add(wechatJob);
     }
